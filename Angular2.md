@@ -100,3 +100,22 @@ http://www.pragimtech.com/kudvenkat_angular2_tutorial_videos_download.aspx
     iv. Add or remove multiple classes ([ngClass]="{'style1': true, 'style2': true}")
         -  <button class='colorClass' [ngClass]='addClasses()'>My Button</button>
         -  <button class='colorClass' [ngClass]="{'nameOfTheClassOne': boolVar, 'secondClass': someBoolCondition}">My Button</button>
+        
+## Part 13 - Style binding in Angular
+
+    - This is very similar to class binding (Part 12 above). Hence, I will leave examples here, which should be self-explanatory provided you understood the class binding.
+    - Standard inlie styling: <button style="color:red">My Button</button>
+    - <button style='color:red' [style.font-weight]="isBold ? 'bold' : 'normal'"> My Button </button>
+    - <button style='color:red' [style.font-size.px]="fontSize"> My Button </button> (fontSize in .ts - I.e., fontSize: number = 30;)
+    - <button style='color:red' [ngStyle]="addStyles()"> My Button </button>
+    
+## Part 14 - Event binding in Angular
+
+    - One-way data binding that we looked at so far (Interpolation, property binding, attribute binding, class binding, style binding) flows data from Component to View.
+    - Event binding is a type of data binding that flows data (mainly events) from View to Component (E.g., onClick etc.)
+    - <button (click)="onClick()"> Click me </button>
+    
+## Part 15 - Two-way data binding in Angular
+
+    - Name : <input [(ngModel)]='name'> 
+    - Note: ngModel requires FormsModule to be imported in AppModule
