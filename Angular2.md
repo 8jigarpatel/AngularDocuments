@@ -37,12 +37,12 @@ http://www.pragimtech.com/kudvenkat_angular2_tutorial_videos_download.aspx
 ## Part 8 & 9 - Data-Binding: One-way (from Component to View, from View to Component), Two-way
 
 	i. Interpolation [from Component to View]
-		- {{ varName }}
-		- <img src='{{imagePath}}'/> 
-		- concatenation is possible; {{ "Var is: " + varName }}
-		- expressions can be specified; {{ 10 + 20 + 20 }} will render 50
-		- Template expressions; {{ boolCondition ? "condition satisfies" : "condition does not satisfy" }}
-		- methods can be called; {{ getUserName() }}
+		- `{{ varName }}`
+		- `<img src='{{imagePath}}'/> `
+		- concatenation is possible; `{{ "Var is: " + varName }}`
+		- expressions can be specified; `{{ 10 + 20 + 20 }}` will render `50`
+		- Template expressions; `{{ boolCondition ? "condition satisfies" : "condition does not satisfy" }}`
+		- methods can be called; `{{ getUserName() }}`
 		- cannot be used when binding non-string value to HTML element's attribute
 
 	ii. Property Binding [from Component to View]
