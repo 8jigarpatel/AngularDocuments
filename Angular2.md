@@ -80,3 +80,23 @@ http://www.pragimtech.com/kudvenkat_angular2_tutorial_videos_download.aspx
 	
 	iii. Angular attribute binding: <th [attr.colspan]="columnSpan"> or <th attr.colspan="{{columnSpan}}">
 
+## Part 12 - Class binding in Angular
+
+    i. Normal class usage
+        - <button class='colorClass'>My Button</button>
+        - colorClass has to be configure in sytlesheet file
+        
+    ii. Angular class binding ([class]='classesToApply')
+        - <button class='colorClass' [class]='classesToApply'>My Button</button>
+        - colorClass in css file, and classesToApply will be configured in .ts file (E.g., classesToApply: string = 'italicsClass boldClass';)
+        - but when this component is loaded, the colorClass gets overridden by the classes specified in classesToApply
+        
+    iii. Add or remove single class ([class.boldClass]='applyBoldClassBoolVariable')
+        - <button class='colorClass' [class.boldClass]='applyBoldClass'>My Button</button>
+        - With this method, standard class (colorClass in this example) will not be affected, and boldClass will get applied conditionally based on applyBoldClass bool value in component
+        - standard class can also be removed with the same method
+        - <button class='colorClass boldClass italicsClass' [class.boldClass]='applyBoldClass'>My Button</button>
+        
+    iv. Add or remove multiple classes ([ngClass]="{'style1': true, 'style2': true}")
+        -  <button class='colorClass' [ngClass]='addClasses()'>My Button</button>
+        -  <button class='colorClass' [ngClass]="{'nameOfTheClassOne': boolVar, 'secondClass': someBoolCondition}">My Button</button>
