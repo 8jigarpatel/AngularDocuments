@@ -2,6 +2,38 @@ Angular 2
 ======================
 http://www.pragimtech.com/kudvenkat_angular2_tutorial_videos_download.aspx
 
+## Part 1, 2, and 3 - Introduction, Setting up in Visual Studio, and Run angular app using F5 from visual studio
+    
+    - This 3 parts have not been compiled as the purpose of this document is to serve as a quick reference book, and the first 3 parts don't seem relevant to this context. However, at the end of the compilation of this series, I will review the document and add one or more parts if their addition would make this document easier to follow.
+    
+## Part 4 - Componenets
+    
+    i. Everything in Angular is component
+        - Component is a class with a template and a decorator.
+        - Component is composed of: Template (HTML / UI), Class (logic), and Decorator (to add metada to class)
+        
+## Part 5 - template vs templateUrl
+
+    - Within an Angular component, HTML can be defined using either template or the templateUrl property of the component.
+    
+    i. template
+        - When using template property, HTML can be specified within TypeScript (.ts) file enclosed in single or double quotes for one-line HTML, and within back-tick characters for multiline HTML.
+        - angular recommends to use template when the HTML is 3 lines or less.
+        
+    ii. templateUrl
+        - When HTML is more than 3 lines, templateUrl should be used.
+        - With templateUrl, you can specify the path where your HTML content is available.
+        
+## Part 6 - Nested components
+
+    - Angular allows for components to be nested.
+    
+## Part 7 - Styling Angular components
+
+    - There are several ways to apply styling the angular component (external stylesheet, inline-styling of elements, internal styling, and using component's styles or styleUrls properties)
+    - In most cases, using styleUrls would be ideal.
+    - Global stylesheet files should be used only for Application / root level styling.
+
 ## Part 8 & 9 - Data-Binding: One-way (from Component to View, from View to Component), Two-way
 
 	i. Interpolation [from Component to View]
@@ -47,3 +79,4 @@ http://www.pragimtech.com/kudvenkat_angular2_tutorial_videos_download.aspx
 	ii. Using interpolation (<th colspan="{{columnSpan}}">) or property binding (<th [colspan]="columnSpan">) will result in an error: "Can't bind to 'colspan' since it isn't a known property of 'th'"
 	
 	iii. Angular attribute binding: <th [attr.colspan]="columnSpan"> or <th attr.colspan="{{columnSpan}}">
+
