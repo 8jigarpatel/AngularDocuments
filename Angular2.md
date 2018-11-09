@@ -42,7 +42,7 @@ http://www.pragimtech.com/kudvenkat_angular2_tutorial_videos_download.aspx
 		
 ## Part 11 - Angular attribute binding
 	
-  i. This can be used where property binding / interpolation cannot help (E.g., rowspan / colspan). But Angular team recommends to use property binding when possible, and use attribute binding when there is no corresponding element property to bind.
+    i. This can be used where property binding / interpolation cannot help (E.g., rowspan / colspan). But Angular team recommends to use property binding when possible, and use attribute binding when there is no corresponding element property to bind.
 	
 	ii. Using interpolation (<th colspan="{{columnSpan}}">) or property binding (<th [colspan]="columnSpan">) will result in an error: "Can't bind to 'colspan' since it isn't a known property of 'th'"
 	
