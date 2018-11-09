@@ -2,7 +2,7 @@ Angular 2
 ======================
 http://www.pragimtech.com/kudvenkat_angular2_tutorial_videos_download.aspx
 
-## 8 & 9 - Data-Binding: One-way (from Component to View, from View to Component), Two-way
+## Part 8 & 9 - Data-Binding: One-way (from Component to View, from View to Component), Two-way
 
 	i. Interpolation [from Component to View]
 		- {{ varName }}
@@ -20,7 +20,7 @@ http://www.pragimtech.com/kudvenkat_angular2_tutorial_videos_download.aspx
 		
 	Note: Interpolation gets converted into property binding by Angular. both the techniques protect us from malicious content and render the content harmlessly.
 
-## 10 - HTML attribute vs DOM property
+## Part 10 - HTML attribute vs DOM property
 
 	i. DOM (Document Object Model)
 		- when browser loads a page it creates the DOM of the page
@@ -40,7 +40,7 @@ http://www.pragimtech.com/kudvenkat_angular2_tutorial_videos_download.aspx
 		
 		Note: Most element attributes have corresponding dom properties, but some don't. E.g., colspan & rowspan.
 		
-## 11 - Angular attribute binding
+## Part 11 - Angular attribute binding
 	
   i. This can be used where property binding / interpolation cannot help (E.g., rowspan / colspan). But Angular team recommends to use property binding when possible, and use attribute binding when there is no corresponding element property to bind.
 	
